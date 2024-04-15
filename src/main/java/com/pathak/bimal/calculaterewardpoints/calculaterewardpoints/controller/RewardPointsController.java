@@ -32,9 +32,11 @@ public class RewardPointsController {
 
     @GetMapping("/sum")
     public int calculateNumbers() {
-        int a = 2;
-        int b = 3;
+       int total = calculateSum(3,5);
+       return total;
+    }
 
-        return a+b;
+    public int calculateSum(int a, int b) {
+        return a + b;
     }
 }
