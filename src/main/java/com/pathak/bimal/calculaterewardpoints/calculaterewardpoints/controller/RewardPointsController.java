@@ -29,4 +29,12 @@ public class RewardPointsController {
     public String hello(){
         return "Hello, world, This is my Hello world Program";
     }
+
+    @GetMapping("/sum")
+    public int calculateNumbers() {
+        int a = 2;
+        int b = 3;
+
+        return a+b;
+    }
 }
